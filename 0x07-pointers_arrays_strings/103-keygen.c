@@ -4,23 +4,23 @@
 
 /**
  * f4 - finds the biggest number
- * @usrn: username
+ * @username: username
  * @len: length of username
  * Return: the biggest number
  */
-int f4(char *usrn, int len)
+int f4(char *username, int len)
 {
 	int max;
 	int vch;
 	unsigned int num;
 
-	max = *usrn;
+	max = *username;
 	vch = 0;
 
 	while (vch < len)
 	{
-		if (max < usrn[vch])
-			max = usrn[vch];
+		if (max < username[vch])
+			max = username[vch];
 		vch += 1;
 	}
 
@@ -32,11 +32,11 @@ int f4(char *usrn, int len)
 
 /**
  * f5 - multiplies each char of username
- * @usrn: username
+ * @username: username
  * @len: length of username
  * Return: multiplied char
  */
-int f5(char *usrn, int len)
+int f5(char *username, int len)
 {
 	int max;
 	int vch;
@@ -45,7 +45,7 @@ int f5(char *usrn, int len)
 
 	while (vch < len)
 	{
-		max = max + usrn[vch] * usrn[vch];
+		max = max + username[vch] * username[vch];
 		vch += 1;
 	}
 
@@ -54,17 +54,17 @@ int f5(char *usrn, int len)
 
 /**
  * f6 - generates a random char
- * @usrn: username
+ * @username: username
  * Return: a random char
  */
-int f6(char *usrn)
+int f6(char *username)
 {
 	int max;
 	int vch;
 
 	max = vch = 0;
 
-	while (vch < *usrn)
+	while (vch < *username)
 	{
 		max = rand();
 		vch += 1;
